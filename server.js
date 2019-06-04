@@ -117,7 +117,7 @@ app.get('/api/cicdapp/myapi', function (req, res) {
   }
   if (db) {
     db.collection('counts').count(function(err, count ){
-      res.send('{ pageCount: custom '}');
+      res.send('{ pageCount: custom }');
     });
   } else {
     res.send('{ pageCount: -custom }');
